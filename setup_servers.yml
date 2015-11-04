@@ -1,0 +1,8 @@
+---
+- name: Configure mybox server
+  hosts: mybox
+  sudo: True
+
+  roles:
+    - common
+    - java
