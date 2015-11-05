@@ -2,7 +2,11 @@
 - name: Configure mybox server
   hosts: mybox
   sudo: True
+  vars:
+    developer_name: Niki
 
   roles:
     - common
     - java
+    - ntp
+    - tomcat

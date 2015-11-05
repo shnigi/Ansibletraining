@@ -1,0 +1,8 @@
+---
+# Install tomcat
+- name: Install tomcat
+  yum: name=tomcat
+- name: Start tomcat
+  service: name=tomcat state=started enabled=yes
+- name: Put tomcat configure file to place
+  template: src=./config.j2 dest=/etc/file.conf owner=root group=root mode=0744

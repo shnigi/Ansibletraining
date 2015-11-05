@@ -1,0 +1,6 @@
+---
+# setup host common settings
+- name: NTP server
+  yum: name=ntp,ntpdate,ntp-doc
+- name: Ensure ntp is running
+  service: name=ntpd state=started enabled=yes
