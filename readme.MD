@@ -1,3 +1,6 @@
+#Install ansible
+https://valdhaus.co/writings/ansible-mac-osx/
+
 ##To run Ansible:
 ansible-playbook setup_servers.yml
 
